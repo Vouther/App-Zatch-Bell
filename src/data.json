@@ -1,0 +1,64 @@
+{
+    "Characters": [
+        {   
+            "nombre": "Zatch Bell",
+            "genero": "Masculino",
+            "edad": 6,
+            "raza": "Mamodo",
+            "personalidad": "Bueno",
+            "compañero": "Kiyomaro Takamine",
+            "photo": "img/Zatch.png",
+            "elemento":["Rayo", "Rayo Zeno"],
+            "color de libro": "Rojo",
+            "familia": ["Zeno Bell (Hermano gemelo)","Rey Bell (Padre)"]  
+        },
+        {   
+            "nombre": "Zeno Bell",
+            "genero": "Masculino",
+            "edad": 6,
+            "raza": "Mamodo",
+            "personalidad": "Maligno",
+            "compañero": "Dufort",
+            "photo": "img/Zeno_Bell.png",
+            "elemento":["Rayo Zeno"],
+            "color de libro": "Gris",
+            "familia": ["Zatch Bell (Hermano gemelo)","Rey Bell (Padre)"]  
+        },
+        {   
+            "nombre": "Ponygon",
+            "genero": "Masculino",
+            "edad": 6,
+            "raza": "Mamodo",
+            "personalidad": "Bueno",
+            "compañero": "Kafk Rayosol",
+            "photo": "img/Ponygon",
+            "elemento":["Armadura", "Fuego"],
+            "color de libro": "Naranja claro",
+            "familia": ["Madre de Ponygon"]  
+        },
+        {   
+            "nombre": "Tia",
+            "genero": "Femenino",
+            "edad": 6,
+            "raza": "Mamodo",
+            "personalidad": "Bueno",
+            "compañero": "Megumi Ooumi",
+            "photo": "img/Tia.png",
+            "elemento":["Escudos", "Curacion"],
+            "color de libro": "Naranja",
+            "familia": []  
+        },
+        {   
+            "nombre": "Brago",
+            "genero": "Masculino",
+            "edad": 14,
+            "raza": "Mamodo",
+            "personalidad": "Bueno",
+            "compañero": "Sherry Belmont",
+            "photo": "img/Brago.png",
+            "elemento":["Gravedad"],
+            "color de libro": "Negro",
+            "familia": []  
+        }
+    ]
+}
