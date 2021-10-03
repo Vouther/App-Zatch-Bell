@@ -1,6 +1,7 @@
 {
     "Characters": [
         {   
+            "id": 0,
             "nombre": "Zatch Bell",
             "genero": "Masculino",
             "edad": 6,
@@ -13,6 +14,7 @@
             "familia": ["Zeno Bell (Hermano gemelo)","Rey Bell (Padre)"]  
         },
         {   
+            "id": 1,
             "nombre": "Zeno Bell",
             "genero": "Masculino",
             "edad": 6,
@@ -25,6 +27,7 @@
             "familia": ["Zatch Bell (Hermano gemelo)","Rey Bell (Padre)"]  
         },
         {   
+            "id": 2,
             "nombre": "Ponygon",
             "genero": "Masculino",
             "edad": 6,
@@ -37,6 +40,7 @@
             "familia": ["Madre de Ponygon"]  
         },
         {   
+            "id": 3,
             "nombre": "Tia",
             "genero": "Femenino",
             "edad": 6,
@@ -49,6 +53,33 @@
             "familia": []  
         },
         {   
+            "id": 4,
+            "nombre": "Kanchome",
+            "genero": "Masculino",
+            "edad": 6,
+            "raza": "Mamodo",
+            "personalidad": "Bueno",
+            "compañero": "Parco Folgore",
+            "photo": "img/Kanchome.png",
+            "elemento":[" Transformacion ", " Ilusion "],
+            "color de libro": "Amarillo",
+            "familia": []  
+        },
+        {   
+            "id": 5,
+            "nombre": "Kolulu",
+            "genero": "Femenino",
+            "edad": 6,
+            "raza": "Mamodo",
+            "personalidad": "Bueno",
+            "compañero": "Lori",
+            "photo": "img/Kolulu.png",
+            "elemento":[" Garras ", " Transformacion "],
+            "color de libro": "Rosa",
+            "familia": []  
+        },
+        {   
+            "id": 6,
             "nombre": "Brago",
             "genero": "Masculino",
             "edad": 14,
@@ -58,6 +89,71 @@
             "photo": "img/Brago.png",
             "elemento":["Gravedad"],
             "color de libro": "Negro",
+            "familia": []  
+        },
+        {   
+            "id": 7,
+            "nombre": "Sugino",
+            "genero": "Masculino",
+            "edad": 6,
+            "raza": "Mamodo",
+            "personalidad": "Maligno",
+            "compañero": "Haru",
+            "photo": "img/Sugino.png",
+            "elemento":[" Planta "],
+            "color de libro": "Verde",
+            "familia": []  
+        },
+        {   
+            "id": 8,
+            "nombre": "Reycom",
+            "genero": "Masculino",
+            "edad": 8,
+            "raza": "Mamodo",
+            "personalidad": "Maligno",
+            "compañero": "Hsokawa",
+            "photo": "img/Reycom.png",
+            "elemento":["Hielo"],
+            "color de libro": "Azul",
+            "familia": []  
+        },
+        {   
+            "id": 9,
+            "nombre": "Yopopo",
+            "genero": "Masculino",
+            "edad": 4,
+            "raza": "Mamodo",
+            "personalidad": "Bueno",
+            "compañero": "Djem",
+            "photo": "img/Tia.png",
+            "elemento":[" Musical "," Energia "],
+            "color de libro": "Verde",
+            "familia": []  
+        },
+        {   
+            "id": 10,
+            "nombre": "Fein",
+            "genero": "Masculino",
+            "edad": 11,
+            "raza": "Mamodo",
+            "personalidad": "Maligno",
+            "compañero": "Sebe",
+            "photo": "img/Fein.png",
+            "elemento":[" Viento ", " Velocidad "],
+            "color de libro": "Purpura",
+            "familia": []  
+        },
+        {   
+            "id": 11,
+            "nombre": "Hyde",
+            "genero": "Masculino",
+            "edad": 6,
+            "raza": "Mamodo",
+            "personalidad": "Neutral",
+            "compañero": "Eido",
+            "photo": "img/Hyde.png",
+            "elemento":["Viento"],
+            "color de libro": "Cian",
             "familia": []  
         }
     ]

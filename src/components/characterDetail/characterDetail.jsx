@@ -1,15 +1,17 @@
 import React from "react";
 import Data from '../../data.json';
+import {useState, useEffect} from "react";
 
-export default class CharacterDetail extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {
-            currentElement: Data.Characters[0],
-        }
-        console.log(this.state)
-    }
+export default function charDetail(props){
 
+    const[selected, setSelected] = useState(Data.Characters[0]);
+    const[characters, setCharacters] = useState([]);
+
+    useEffect(() =>{
+        setCharacters(Data.Characters);
+        setSelected(Data.Characters[0]);
+    }, [Data.Characters, personajes]);
+/*
     modificarPersonaje = (e) =>{
         this.setState(() =>{
             return{
@@ -18,31 +20,37 @@ export default class CharacterDetail extends React.Component{
             }
         })
     }
-
-    render(){
-        return(
+*/
+    const onChangeInput = (e) => {
+        setSelected(
+            Data.Characters.find(
+                (personaje) => personaje.id == e.target.value)
+        )
+    }
+   
+     return(
             <div>
-                <select id="Select" onChange={(event)=> this.modificarPersonaje(event)}>
+                <select id="Select" onChange={(event)=> this.onChangeInput(event)}>
                     {this.props.personajes.map((e) => {
-                        return <option value={e.nombre} > {e.nombre} </option> 
+                        return <option value={e.id} > {e.id} </option> 
                     })}
                 </select>
                 <div>
-                    <img src={this.state.currentElement.photo} alt="" />
+                    <img src={selected.photo} alt="" />
                 </div>
                 <div>
                     <h2>Personaje: </h2>
-                    <p><b>Nombre:</b> {this.state.currentElement.nombre}</p>
-                    <p><b>Genero:</b> {this.state.currentElement.genero}</p>
-                    <p><b>Edad:</b> {this.state.currentElement.edad}</p>
-                    <p><b>Raza:</b> {this.state.currentElement.raza}</p>
-                    <p><b>Personalidad:</b> {this.state.currentElement.personalidad}</p>
-                    <p><b>compañero:</b> {this.state.currentElement.compañero}</p>
-                    <p><b>Elemento:</b> {this.state.currentElement.elemento}</p>
-                    <p><b>Color de libro:</b> {this.state.currentElement["color de libro"]}</p>
-                    <p><b>Familia:</b> {this.state.currentElement.familia}</p>
+                    <p><b>Nombre:</b> {selected.nombre}</p>
+                    <p><b>Genero:</b> {selected.genero}</p>
+                    <p><b>Edad:</b> {selected.edad}</p>
+                    <p><b>Raza:</b> {selected.raza}</p>
+                    <p><b>Personalidad:</b> {selected.personalidad}</p>
+                    <p><b>compañero:</b> {selected.compañero}</p>
+                    <p><b>Elemento:</b> {selected.elemento}</p>
+                    <p><b>Color de libro:</b> {selected["color de libro"]}</p>
+                    <p><b>Familia:</b> {selected.familia}</p>
                 </div>
             </div>
-        )
-    }
+        )   
+    
 }
