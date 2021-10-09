@@ -13,15 +13,15 @@ export default class Navbar extends React.Component{
                 <ul>
                     <li>
                         <a href="#"> Zatch Bell </a>
-                        <NavLink exact to="/" activeClassName="active">Zatch Bell</NavLink>
+                        <NavLink exact to="/" activeClassName="activo">Zatch Bell</NavLink>
                     </li>
                     <li>
                         <a href="#"> Personajes </a>
-                        <NavLink exact to="charDetail" activeClassName="active">Personajes</NavLink>
+                        <NavLink exact to="/charDetail" activeClassName="activo">Personajes</NavLink>
                     </li>
                     <li>
-                        <a href="#"> Creador </a>
-                        <NavLink exact to="/about" activeClassName="active">About</NavLink>
+                        <a href="#"> About </a>
+                        <NavLink exact to="/about" >About</NavLink>
                     </li>
                 </ul>
                 </nav>

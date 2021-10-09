@@ -1,8 +1,8 @@
 import React from "react";
 import Data from '../../data.json';
-import {useState, useEffect} from "react";
+import { useEffect,useState} from "react";
 
-export default function charDetail(props){
+export default function CharDetail(props){
 
     const[selected, setSelected] = useState(Data.Characters[0]);
     const[characters, setCharacters] = useState([]);
@@ -10,7 +10,7 @@ export default function charDetail(props){
     useEffect(() =>{
         setCharacters(Data.Characters);
         setSelected(Data.Characters[0]);
-    }, [Data.Characters, personajes]);
+    }, [Data.Characters, characters]);
 /*
     modificarPersonaje = (e) =>{
         this.setState(() =>{
@@ -23,16 +23,15 @@ export default function charDetail(props){
 */
     const onChangeInput = (e) => {
         setSelected(
-            Data.Characters.find(
-                (personaje) => personaje.id == e.target.value)
+            characters.find((personaje) => personaje.id === e.target.value)
         )
     }
    
      return(
             <div>
-                <select id="Select" onChange={(event)=> this.onChangeInput(event)}>
-                    {this.props.personajes.map((e) => {
-                        return <option value={e.id} > {e.id} </option> 
+                <select id="Select" onChange={(e)=> this.onChangeInput(e)}>
+                    {this.props.personajes.map((personaje) => {
+                        return <option value={personaje.id} > {personaje.id} </option> 
                     })}
                 </select>
                 <div>

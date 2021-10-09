@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar/navbar';
 import Home from './components/home/home';
@@ -33,7 +32,7 @@ function App() {
         </Route>
 
         <Route>
-          <h1> PAG NOT FOUND </h1>
+          <h1> ERROR 404 NOT FOUND </h1>
         </Route>
 
       </Switch>

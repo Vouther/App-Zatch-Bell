@@ -3,7 +3,7 @@ import { useParams } from "react-router";
 
 export default function CharacterDetail2(props){
    
-    const parametro = useParams();
+    const parametro = useParams();//trae el parametro de la ruta
 
     const elemento = props.character.find((personaje)=>personaje.id==parametro.id);
 
